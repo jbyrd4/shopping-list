@@ -73,4 +73,5 @@ addShoppingList('Chicken', 4)
 addShoppingList('Some Good Beer', 16)
 addShoppingList('Steak', 7)
 addShoppingList('frozen Vegetables', 9)
+
 console.log(shoppingItems)
