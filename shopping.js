@@ -1,4 +1,4 @@
-const list = [
+const shoppingItems = [
     {
         id: 1,
         name: 'milk',
@@ -57,4 +57,21 @@ const list = [
     
 ];
 
-console.log(list);
+const addShoppingList = (newItem, prices) => {
+    const newID = shoppingItems.length + 1
+
+    const newItemObject = {
+        id: newID,
+        name: newItem,
+        price: prices
+    }
+    shoppingItems.push(newItemObject)
+}
+
+addShoppingList('frozen Pizza', 6)
+addShoppingList('Chicken', 4)
+addShoppingList('Some Good Beer', 16)
+addShoppingList('Steak', 7)
+addShoppingList('frozen Vegetables', 9)
+
+console.log(shoppingItems)
