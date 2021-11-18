@@ -75,3 +75,9 @@ addShoppingList('Steak', 7)
 addShoppingList('frozen Vegetables', 9)
 
 console.log(shoppingItems)
+
+for (item of shoppingItems) {
+    if (item.price >= 8) {
+        console.log(shoppingItems[item.id-1])
+    }
+}
